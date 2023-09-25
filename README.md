@@ -5,7 +5,7 @@
 
   <br/>
 
-  <h3><b>Vet Clinic</b></h3>
+  <h3><b>Veterinary Clinic</b></h3>
 
 </div>
 
