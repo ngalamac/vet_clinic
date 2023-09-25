@@ -12,7 +12,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Space-Traveller's-Hub ](#-Space-Traveller's-Hub-)
+- [📖 Veterinary Clinic ](#-Veterinary-Clinic-)
     - [Tech Stack](#tech-stack)
   - [🛠 Built With ](#-built-with-)
     - [Key Features ](#key-features-)
@@ -30,7 +30,7 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 Veterinary Clinic <a name="about-project"></a>
+# 📖 Veterinary-Clinic <a name="about-project"></a>
 
 Veterinary clinic is a PostgreSQL-based project which showcases the creation, querying, and management of data related to animals in a veterinary context. It provides a basic yet instructive example of data handling for educational purposes.
 
