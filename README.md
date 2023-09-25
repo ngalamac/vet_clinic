@@ -89,7 +89,7 @@ No installation required
 
 ### Usage
 
-To run the project, execute the SQL commands
+To run the project, execute the [SQL commands listed here](https://github.com/ngalamac/vet_clinic/blob/create-animal-tables/queries.sql)
 
 ### Run tests
 
