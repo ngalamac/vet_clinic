@@ -9,5 +9,4 @@ CREATE TABLE animals(id INT NOT NULL primary key,
                      weight_kg FLOAT);
 
 /* Alter animals table to add species column*/
-ALTER TABLE animals
-ADD COLUMN species VARCHAR(100);
+ALTER TABLE animals ADD COLUMN species VARCHAR(100);
