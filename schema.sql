@@ -7,3 +7,7 @@ CREATE TABLE animals(id INT NOT NULL primary key,
                      escape_attempts INT, 
                      neutered BOOLEAN, 
                      weight_kg FLOAT);
+
+/* Alter animals table to add species column*/
+ALTER TABLE animals
+ADD COLUMN species VARCHAR(100);
