@@ -24,3 +24,13 @@ ALTER TABLE animals DROP COLUMN IF EXISTS species;
 ALTER TABLE animals ADD COLUMN species_id INT REFERENCES species(id);
 /*Add the "owner_id" column as a foreign key referencing the "id" column in the "owners" table*/
 ALTER TABLE animals ADD COLUMN owner_id INT REFERENCES owners(id);
+
+/* THE FOLLOWING ACHEMA GOES FOR THE JOIN-TABLE MILESTONE*/
+/*creating vets table*/
+CREATE TABLE vets ( id SERIAL PRIMARY KEY, name VARCHAR(100), age INTEGER, date_of_graduation DATE );
+/*Create the specializations table*/
+CREATE TABLE specializations ( vet_id INTEGER REFERENCES vets(id), species VARCHAR(100), PRIMARY KEY (vet_id, species));
+/*Add unique constraint to the id column of the animals table to avoid errors*/
+ALTER TABLE animals ADD CONSTRAINT animals_id_unique UNIQUE (id);
+/*Create the visits table*/
+CREATE TABLE visits (animal_id INTEGER REFERENCES animals(id),vet_id INTEGER REFERENCES vets(id),visit_date DATE,PRIMARY KEY (animal_id, vet_id, visit_date));
