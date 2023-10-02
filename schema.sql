@@ -38,6 +38,10 @@ CREATE TABLE visits (animal_id INTEGER REFERENCES animals(id),vet_id INTEGER REF
 /* THE FOLLOWING SCHEMA GOES FOR THE PERFORMANCE AUDIT MILESTONE*/
 /* Alter owners table  to add email column */
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+--Added index on visits,owners and animal_id
+CREATE INDEX ON visits (vet_id);
+CREATE INDEX ON owners (email);
+CREATE INDEX ON visits (animal_id);
 
 
 
