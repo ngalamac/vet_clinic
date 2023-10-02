@@ -34,3 +34,4 @@ CREATE TABLE specializations ( vet_id INTEGER REFERENCES vets(id), species VARCH
 ALTER TABLE animals ADD CONSTRAINT animals_id_unique UNIQUE (id);
 /*Create the visits table*/
 CREATE TABLE visits (animal_id INTEGER REFERENCES animals(id),vet_id INTEGER REFERENCES vets(id),visit_date DATE,PRIMARY KEY (animal_id, vet_id, visit_date));
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
