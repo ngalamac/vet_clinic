@@ -84,3 +84,16 @@ VALUES
   (4, 3, '2021-05-04'),(5, 4, '2021-02-24'),(6, 2, '2019-12-21'),(6, 1, '2020-08-10'),(6, 2, '2021-04-07'),(7, 3, '2019-09-29'),
   (8, 4, '2020-10-03'),(8, 4, '2020-11-04'),(9, 4, '2019-01-24'),(9, 4, '2019-05-15'),(9, 4, '2020-02-27'),(9, 4, '2020-08-03'),
   (10, 3, '2020-05-24'),(10, 1, '2021-01-11');
+
+/*THE FOLLOWING DATA GOES FOR THE PERFORMANCE AUDIT MILESTONE*/
+/*Populate more data into the visits table */
+INSERT INTO visits (animal_id, vet_id, visit_date)
+SELECT *
+FROM (
+  SELECT id FROM animals
+) animal_ids,
+(
+  SELECT id FROM vets
+) vet_ids,
+generate_series('1980-01-01'::timestamp, '9999-01-01', '4 hours') visit_timestamp
+ON CONFLICT DO NOTHING;
