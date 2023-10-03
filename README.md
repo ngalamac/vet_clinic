@@ -108,6 +108,12 @@ Deploy this project on any server: localhost, live host, cloud host.
 - GitHub: [ngalamac](https://github.com/ngalamac)
 - LinkedIn: [Ngala Mac](https://www.linkedin.com/in/...)
 
+👤 **Ian Kiema**
+
+- GitHub: [@githubhandle](https://github.com/iankiema)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](www.linkedin.com/in/ian-kiema-73419779)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

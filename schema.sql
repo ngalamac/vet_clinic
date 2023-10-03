@@ -34,3 +34,18 @@ CREATE TABLE specializations ( vet_id INTEGER REFERENCES vets(id), species VARCH
 ALTER TABLE animals ADD CONSTRAINT animals_id_unique UNIQUE (id);
 /*Create the visits table*/
 CREATE TABLE visits (animal_id INTEGER REFERENCES animals(id),vet_id INTEGER REFERENCES vets(id),visit_date DATE,PRIMARY KEY (animal_id, vet_id, visit_date));
+
+/* THE FOLLOWING SCHEMA GOES FOR THE PERFORMANCE AUDIT MILESTONE*/
+/* Alter owners table  to add email column */
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+--Added index on visits,owners and animal_id
+CREATE INDEX ON visits (vet_id);
+CREATE INDEX ON owners (email);
+CREATE INDEX ON visits (animal_id);
+
+
+
+
+
+
+
